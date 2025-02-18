@@ -35,7 +35,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 angle: 180
             }, // 다섯 번째 페이지 (회전각 180)
             5: {
-                angle: 225
+                angle: 252
             }, // 여섯 번째 페이지 (회전각 252)
             6: {
                 angle: 270
