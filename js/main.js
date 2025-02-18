@@ -72,15 +72,9 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: '800px',
                     left: 'calc(50% - 400px)'
 
-
                 },
 
-
             },
-
-
-
-
 
             1: {
 
