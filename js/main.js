@@ -55,16 +55,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
                 },
                 square1: {
-                    width: '50%',
+                    width: '100%',
                     height: '100%',
-                    top: '0',
+                    top: '0%',
 
                 },
                 square2: {
-                    width: '50%',
+                    width: '100%',
                     height: '100%',
-                    top: '0',
-                    left: '0'
+                    top: '100%',
+
                 },
                 car: {
                     top: '700px',
@@ -91,17 +91,18 @@ window.addEventListener("DOMContentLoaded", () => {
                     left: 'calc(50% - 79.375px)'
 
                 },
-                square1: {
-                    width: '60%',
-                    height: '90%',
-                    top: '800px',
-                    right: '0'
+                square1: {                    
+                    width: '100%',
+                    height: '100%',
+                    top: '0%'
+
                 },
                 square2: {
-                    width: '40%',
-                    height: '80%',
-                    top: '5%',
-                    left: '0'
+                    width: '100%',
+                    height: '100%',
+                    top: '55%',
+ 
+
                 },
                 car: {
                     top: '100px',
@@ -363,6 +364,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: logoStyles.width,
                     height: logoStyles.height,
                     top: logoStyles.top,
+                    bottom: logoStyles.bottom,
                     left: logoStyles.left,
                     right: logoStyles.right
                 }, dur_sc, easing_sc);
@@ -372,6 +374,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: square1Styles.width,
                     height: square1Styles.height,
                     top: square1Styles.top,
+                    bottom: square1Styles.bottom,
                     left: square1Styles.left,
                     right: square1Styles.right
                 }, dur_sc, easing_sc);
@@ -381,6 +384,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: square2Styles.width,
                     height: square2Styles.height,
                     top: square2Styles.top,
+                    bottom: square2Styles.bottom,
                     left: square2Styles.left,
                     right: square2Styles.right
                 }, dur_sc, easing_sc);
@@ -390,6 +394,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: carStyles.width,
                     height: carStyles.height,
                     top: carStyles.top,
+                    bottom: carStyles.bottom,
                     left: carStyles.left,
                     right: carStyles.right
                 }, dur_sc, easing_sc);
