@@ -2,11 +2,13 @@
 
 html {
   white-space: nowrap;
-
+  overflow: hidden;
+  
 }
 
 .scbar::-webkit-scrollbar {
   width: 0px;
+
 }
 
 body * {

@@ -1,22 +1,13 @@
 @charset "utf-8";
+@import url(common.css);
 .page {
     width: 100%;
     height: 100%;
-    /* 
-        width: 100vw;
-        height: 100vh;
-        보이는 화면 기준의 뷰포트단위를 쓰면
-        body의 height 100%가 필요없다!
-        왜냐하면 보이는 화면을 기준하니까!
-        단, vw단위는 스크롤바 트랙까지 포함한
-        화면 전체를 기준하므로
-        데스트탑에서는 100%를 사용하는게 좋다!
-        (이유는 가로스크롤바가 생기게 되므로!)
-     */
+
 }
 
 #cont {
-    height: 100vh;  
+    height: 100%;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,14 +19,14 @@
     height: 100%;
   
   }
-  
+
   #aSide model-viewer {
     position: absolute;
-    /* bottom: -100%; */
-    left: calc(50% - 500px);
-    width: 1000px;
-    height: 1000px;
-    border: rgba(255, 255, 255, 0);
+    top: 700px;
+    left: calc(50% - 400px);
+    width: 800px;
+    height: 800px;
+    border: none;
     outline: 1px dotted red;
   
   }
@@ -49,8 +40,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 50vw;
-    height: 100vh;
+    width: 50%;
+    height: 100%;
     background: red;
     z-index: -999999;
 }
@@ -59,19 +50,19 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 50vw;
-    height: 100vh;
+    width: 50%;
+    height: 100%;
     background: blue;
     z-index: -999999;
 }
 
 header .logo {
     position: absolute;
-    top: 200px;
-    left: calc(50% - 158px);
-    width: 316px;
+    top: 30%;
+    left: calc(50% - 79.375px);
+    width: 158.75px;
     /*1250 625 317.5 158.75 */
-    height: 350px;
+    height: 175px;
     /*1400 700 350 175 */
     background: url(../img/carLogo.png)
     no-repeat center / 100% 100%;
