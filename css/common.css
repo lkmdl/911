@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+html {
+  white-space: nowrap;
+
+}
+
+.scbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+body * {
+  /* outline: 3px dotted tomato; */
+
+  /* NoDrag */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+ol,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 100%;
+  text-decoration: none;
+
+}
+
+a {
+  display: block;
+
+}
+
+
+.fbx {
+  display: flex;
+
+}
+
+.rbx {
+  position: relative;
+  ;
+
+}
+
+.rbx::before {
+  /* 비율유지박스 */
+  content: '';
+  display: block;
+  clear: both;
+
+}
+
+.ibx {
+  /* 1920px보다 작을땐 100%를 유지함! */
+  width: 1920px;
+  max-width: 100%;
+  margin: 0 auto;
+  
+}
+
+img {
+  border: none;
+
+}

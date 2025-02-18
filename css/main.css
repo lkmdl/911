@@ -1,0 +1,123 @@
+@charset "utf-8";
+.page {
+    width: 100%;
+    height: 100%;
+    /* 
+        width: 100vw;
+        height: 100vh;
+        보이는 화면 기준의 뷰포트단위를 쓰면
+        body의 height 100%가 필요없다!
+        왜냐하면 보이는 화면을 기준하니까!
+        단, vw단위는 스크롤바 트랙까지 포함한
+        화면 전체를 기준하므로
+        데스트탑에서는 100%를 사용하는게 좋다!
+        (이유는 가로스크롤바가 생기게 되므로!)
+     */
+}
+
+#cont {
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  #aSide model-viewer {
+    position: absolute;
+    /* bottom: -100%; */
+    left: calc(50% - 500px);
+    width: 1000px;
+    height: 1000px;
+    border: rgba(255, 255, 255, 0);
+    outline: 1px dotted red;
+  
+  }
+
+.fixed {
+    position: fixed;
+    height: 100%;
+}
+
+.square1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background: red;
+    z-index: -999999;
+}
+
+.square2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background: blue;
+    z-index: -999999;
+}
+
+header .logo {
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 158px);
+    width: 316px;
+    /*1250 625 317.5 158.75 */
+    height: 350px;
+    /*1400 700 350 175 */
+    background: url(../img/carLogo.png)
+    no-repeat center / 100% 100%;
+    ;
+
+}
+
+/* 개별 페이지 셋팅 */
+#pg1 {
+    
+}
+
+
+#pg2 {
+    background-color: #222;
+}
+
+#pg3 {
+    background-color: #333;
+}
+
+#pg4 {
+    background-color: #444;
+}
+
+#pg5 {
+    background-color: #555;
+}
+
+#pg6 {
+    background-color: #666;
+/* } */
+}
+
+#pg7 {
+    background-color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
