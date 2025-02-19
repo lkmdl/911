@@ -1,26 +1,20 @@
 @charset "utf-8";
 @import url(common.css);
+
 .page {
     width: 100%;
     height: 100%;
 
 }
 
-#cont {
-    height: 100%;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .cont {
-    position: relative;
+/* 
+.cont {
     width: 100%;
     height: 100%;
-  
-  }
 
-  #aSide model-viewer {
+} */
+
+#aSide model-viewer {
     position: absolute;
     top: 700px;
     left: calc(50% - 400px);
@@ -28,31 +22,21 @@
     height: 800px;
     border: none;
     /* outline: 1px dotted red; */
-  
-  }
+
+}
 
 .fixed {
     position: fixed;
     height: 100%;
 }
 
-.square1 {
+.square {
     position: absolute;
-    bottom: 0;
+    top: 0%;
     width: 100%;
     height: 100%;
     background: black;
-    z-index: -1;
-}
-
-.square2 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    top: 100%;
-    background: white;
-    z-index: -1;
+    z-index: -2;
 }
 
 header .logo {
@@ -63,51 +47,42 @@ header .logo {
     /*1250 625 317.5 158.75 */
     height: 175px;
     /*1400 700 350 175 */
-    background: url(../img/carLogo.png)
-    no-repeat center / 100% 100%;
+    background: url(../img/carLogo.png) no-repeat center / 100% 100%;
     ;
 
 }
 
-/* 개별 페이지 셋팅 */
-#pg1 {
-    
+h2 {
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 267.43px);
+    height: fit-content;
+    font-size: 76px;
+    color: wheat;
+
 }
 
+/* 개별 페이지 셋팅 */
+
+/* 
+#pg1 {
+
+}
 
 #pg2 {
-    background-color: #222;
 }
 
 #pg3 {
-    background-color: #333;
 }
 
 #pg4 {
-    background-color: #444;
 }
 
 #pg5 {
-    background-color: #555;
 }
 
 #pg6 {
-    background-color: #666;
-/* } */
 }
 
 #pg7 {
-    background-color: #777;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+} */

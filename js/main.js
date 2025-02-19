@@ -26,13 +26,13 @@ window.addEventListener("DOMContentLoaded", () => {
                 angle: 90
             }, // 두 번째 페이지 (회전각 45)
             2: {
-                angle: 90
+                angle: 50
             }, // 세 번째 페이지 (회전각 90)
             3: {
                 angle: 135
             }, // 네 번째 페이지 (회전각 135)
             4: {
-                angle: 180
+                angle: 270
             }, // 다섯 번째 페이지 (회전각 180)
             5: {
                 angle: 252
@@ -43,35 +43,30 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
 
-
+// "여기 아래에"
         let pageStyleConfig = {
             0: {
-
                 logo: {
                     width: '158.75px',
                     height: '175px',
                     top: '30%',
                     left: 'calc(50% - 79.375px)'
-
                 },
-                square1: {
+                square: {
                     width: '100%',
                     height: '100%',
                     top: '0%',
-
-                },
-                square2: {
-                    width: '100%',
-                    height: '100%',
-                    top: '100%',
-
-                },
+                    left: '0%'
+                },                
                 car: {
-                    top: '700px',
                     width: '800px',
                     height: '800px',
+                    top: '100%',
                     left: 'calc(50% - 400px)'
-
+                },
+                p9c: {
+                    top: '100%',
+                    left: 'calc(50% - 267.43px)'
                 },
 
             },
@@ -83,30 +78,23 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: '175px',
                     top: '10%',
                     left: 'calc(50% - 79.375px)'
-
                 },
-                square1: {                    
+                square: {
                     width: '100%',
                     height: '100%',
-                    top: '0%'
-
-                },
-                square2: {
-                    width: '100%',
-                    height: '100%',
-                    top: '55%',
- 
-
+                    top: '-45%',
+                    left: '0%'
                 },
                 car: {
-                    top: '100px',
                     width: '800px',
                     height: '800px',
+                    top: '10%',
                     left: 'calc(50% - 400px)'
-
                 },
-
-
+                p9c: {
+                    top: '28%',
+                    left: 'calc(50% - 267.43px)'
+                },
 
             },
 
@@ -120,29 +108,31 @@ window.addEventListener("DOMContentLoaded", () => {
             2: {
 
                 logo: {
-                    width: '70%',
-                    height: '80%',
-                    top: '20%',
-                    right: '0'
+                    width: '158.75px',
+                    height: '175px',
+                    top: '80%',
+                    left: 'calc(85% - 79.375px)'
+
+
                 },
-                square1: {
-                    width: '70%',
-                    height: '80%',
-                    top: '20%',
-                    right: '0'
-                },
-                square2: {
-                    width: '30%',
-                    height: '70%',
-                    top: '10%',
-                    left: '0'
+                square: {
+                    width: '100%',
+                    height: '100%',
+                    top: '0%',
+                    left: '-50%'
                 },
                 car: {
-                    width: '30%',
-                    height: '70%',
+                    width: '800px',
+                    height: '800px',
                     top: '10%',
-                    left: 'calc(50% - 400px)'
+                    left: '50%'
                 },
+                p9c: {
+                    top: '100%',
+                    left: 'calc(20%)'
+
+                },
+
 
 
             },
@@ -157,28 +147,24 @@ window.addEventListener("DOMContentLoaded", () => {
             3: {
 
                 logo: {
+                    width: '158.75px',
+                    height: '175px',
+                    top: '30%',
+                    left: 'calc(50% - 79.375px)'
+
+                },
+                square: {
                     width: '80%',
                     height: '70%',
                     top: '30%',
-                    right: '0'
-                },
-                square1: {
-                    width: '80%',
-                    height: '70%',
-                    top: '30%',
-                    right: '0'
-                },
-                square2: {
-                    width: '20%',
-                    height: '60%',
-                    top: '15%',
                     left: '0'
                 },
                 car: {
                     width: '20%',
                     height: '60%',
-                    top: '15%',
-                    left: 'calc(50% - 400px)'
+                    bottom: '-20%',
+                    left: 'calc(50% - 267.43px)'
+
                 },
 
 
@@ -194,22 +180,11 @@ window.addEventListener("DOMContentLoaded", () => {
             4: {
 
                 logo: {
-                    width: '100%',
-                    height: '60%',
-                    top: '40%',
-                    right: '0'
-                },
-                square1: {
-                    width: '100%',
-                    height: '60%',
-                    top: '40%',
-                    right: '0'
-                },
-                square2: {
-                    width: '0',
-                    height: '0',
-                    top: '50%',
-                    left: '0'
+                    width: '158.75px',
+                    height: '175px',
+                    top: '30%',
+                    left: 'calc(50% - 79.375px)'
+
                 },
                 car: {
                     width: '0',
@@ -231,18 +206,13 @@ window.addEventListener("DOMContentLoaded", () => {
             5: {
 
                 logo: {
-                    width: '50%',
-                    height: '50%',
-                    top: '50%',
-                    right: '0'
+                    width: '158.75px',
+                    height: '175px',
+                    top: '30%',
+                    left: 'calc(50% - 79.375px)'
+
                 },
-                square1: {
-                    width: '50%',
-                    height: '50%',
-                    top: '50%',
-                    right: '0'
-                },
-                square2: {
+                square: {
                     width: '50%',
                     height: '50%',
                     top: '50%',
@@ -268,20 +238,15 @@ window.addEventListener("DOMContentLoaded", () => {
             6: {
 
                 logo: {
+                    width: '158.75px',
+                    height: '175px',
+                    top: '30%',
+                    left: 'calc(50% - 79.375px)'
+
+                },
+                square: {
                     width: '100%',
                     height: '100%',
-                    top: '0',
-                    right: '0'
-                },
-                square1: {
-                    width: '100%',
-                    height: '100%',
-                    top: '0',
-                    right: '0'
-                },
-                square2: {
-                    width: '0',
-                    height: '0',
                     top: '0',
                     left: '0'
                 },
@@ -349,9 +314,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
                 // 페이지 번호에 맞춰 애니메이션 변경
                 let logoStyles = pageStyleConfig[pno].logo;
-                let square1Styles = pageStyleConfig[pno].square1;
-                let square2Styles = pageStyleConfig[pno].square2;
+                let squareStyles = pageStyleConfig[pno].square;
+
+                // let square2Styles = pageStyleConfig[pno].square2;
+
                 let carStyles = pageStyleConfig[pno].car;
+                let p9cStyles = pageStyleConfig[pno].p9c;
 
                 // logo 애니메이션
                 $(".logo").stop().animate({
@@ -363,24 +331,14 @@ window.addEventListener("DOMContentLoaded", () => {
                     right: logoStyles.right
                 }, dur_sc, easing_sc);
 
-                // square1 애니메이션
-                $(".square1").stop().animate({
-                    width: square1Styles.width,
-                    height: square1Styles.height,
-                    top: square1Styles.top,
-                    bottom: square1Styles.bottom,
-                    left: square1Styles.left,
-                    right: square1Styles.right
-                }, dur_sc, easing_sc);
-
-                // square2 애니메이션
-                $(".square2").stop().animate({
-                    width: square2Styles.width,
-                    height: square2Styles.height,
-                    top: square2Styles.top,
-                    bottom: square2Styles.bottom,
-                    left: square2Styles.left,
-                    right: square2Styles.right
+                // square 애니메이션
+                $(".square").stop().animate({
+                    width: squareStyles.width,
+                    height: squareStyles.height,
+                    top: squareStyles.top,
+                    bottom: squareStyles.bottom,
+                    left: squareStyles.left,
+                    right: squareStyles.right
                 }, dur_sc, easing_sc);
 
                 // car 애니메이션
@@ -391,6 +349,16 @@ window.addEventListener("DOMContentLoaded", () => {
                     bottom: carStyles.bottom,
                     left: carStyles.left,
                     right: carStyles.right
+                }, dur_sc, easing_sc);
+
+                // p9c 애니메이션
+                $(".p9c").stop().animate({
+                    width: p9cStyles.width,
+                    height: p9cStyles.height,
+                    top: p9cStyles.top,
+                    bottom: p9cStyles.bottom,
+                    left: p9cStyles.left,
+                    right: p9cStyles.right
                 }, dur_sc, easing_sc);
 
                 //***************************
