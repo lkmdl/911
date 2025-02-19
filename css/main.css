@@ -16,10 +16,11 @@
 
 #aSide model-viewer {
     position: absolute;
-    top: 700px;
-    left: calc(50% - 400px);
-    width: 800px;
-    height: 800px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: 1000px;
     border: none;
     /* outline: 1px dotted red; */
 
@@ -39,27 +40,31 @@
     z-index: -2;
 }
 
-header .logo {
+.logo {
     position: absolute;
     top: 30%;
-    left: calc(50% - 79.375px);
+    left: 50%;
     width: 158.75px;
     /*1250 625 317.5 158.75 */
     height: 175px;
     /*1400 700 350 175 */
     background: url(../img/carLogo.png) no-repeat center / 100% 100%;
-    ;
+    transform: translateX(-50%);
 
 }
 
-h2 {
+.p9c {
     position: absolute;
     top: 100%;
-    left: calc(50% - 267.43px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
     height: fit-content;
-    font-size: 76px;
-    color: wheat;
-
+    color: #f5deb340;
+    font-size: 100px;
+    font-family: cursive;
+    z-index: -1;
+    
 }
 
 /* 개별 페이지 셋팅 */

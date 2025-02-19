@@ -43,66 +43,67 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
 
-// "여기 아래에"
         let pageStyleConfig = {
             0: {
                 logo: {
                     width: '158.75px',
                     height: '175px',
                     top: '30%',
-                    left: 'calc(50% - 79.375px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 },
                 square: {
                     width: '100%',
                     height: '100%',
                     top: '0%',
                     left: '0%'
-                },                
+                },
                 car: {
-                    width: '800px',
-                    height: '800px',
+                    width: '1000px',
+                    height: '1000px',
                     top: '100%',
-                    left: 'calc(50% - 400px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 },
                 p9c: {
                     top: '100%',
-                    left: 'calc(50% - 267.43px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 },
 
             },
-
+            /////////////////////////////////////////////////////
             1: {
-
                 logo: {
                     width: '158.75px',
                     height: '175px',
                     top: '10%',
-                    left: 'calc(50% - 79.375px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 },
                 square: {
                     width: '100%',
                     height: '100%',
-                    top: '-45%',
+                    top: '-30%',
                     left: '0%'
                 },
                 car: {
-                    width: '800px',
-                    height: '800px',
+                    width: '1000px',
+                    height: '1000px',
                     top: '10%',
-                    left: 'calc(50% - 400px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 },
                 p9c: {
-                    top: '28%',
-                    left: 'calc(50% - 267.43px)'
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '40%',
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 },
 
+                ////////////////////////////////////////////////////////
             },
-
-
-
-
-
-
 
 
             2: {
@@ -110,8 +111,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 logo: {
                     width: '158.75px',
                     height: '175px',
-                    top: '80%',
-                    left: 'calc(85% - 79.375px)'
+                    top: '10%',
+                    left: '90%'
 
 
                 },
@@ -119,17 +120,20 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '100%',
                     height: '100%',
                     top: '0%',
-                    left: '-50%'
+                    left: '-23%'
                 },
                 car: {
-                    width: '800px',
-                    height: '800px',
-                    top: '10%',
-                    left: '50%'
+                    width: '1000px',
+                    height: '1000px',
+                    top: '0%',
+                    left: '80%'
                 },
                 p9c: {
-                    top: '100%',
-                    left: 'calc(20%)'
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '10%',
+                    left: '30%',
+                    color: 'white'
 
                 },
 
@@ -150,7 +154,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '158.75px',
                     height: '175px',
                     top: '30%',
-                    left: 'calc(50% - 79.375px)'
+                    left: 'calc(50% - 79.375px / 2)'
 
                 },
                 square: {
@@ -163,7 +167,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '20%',
                     height: '60%',
                     bottom: '-20%',
-                    left: 'calc(50% - 267.43px)'
+                    left: 'calc(50% - 267.43px / 2)'
 
                 },
 
@@ -315,20 +319,17 @@ window.addEventListener("DOMContentLoaded", () => {
                 // 페이지 번호에 맞춰 애니메이션 변경
                 let logoStyles = pageStyleConfig[pno].logo;
                 let squareStyles = pageStyleConfig[pno].square;
-
-                // let square2Styles = pageStyleConfig[pno].square2;
-
                 let carStyles = pageStyleConfig[pno].car;
                 let p9cStyles = pageStyleConfig[pno].p9c;
+                let prsStyles = pageStyleConfig[pno].prs;
+
 
                 // logo 애니메이션
                 $(".logo").stop().animate({
                     width: logoStyles.width,
                     height: logoStyles.height,
                     top: logoStyles.top,
-                    bottom: logoStyles.bottom,
-                    left: logoStyles.left,
-                    right: logoStyles.right
+                    left: logoStyles.left
                 }, dur_sc, easing_sc);
 
                 // square 애니메이션
@@ -336,9 +337,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: squareStyles.width,
                     height: squareStyles.height,
                     top: squareStyles.top,
-                    bottom: squareStyles.bottom,
-                    left: squareStyles.left,
-                    right: squareStyles.right
+                    left: squareStyles.left
                 }, dur_sc, easing_sc);
 
                 // car 애니메이션
@@ -346,9 +345,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: carStyles.width,
                     height: carStyles.height,
                     top: carStyles.top,
-                    bottom: carStyles.bottom,
-                    left: carStyles.left,
-                    right: carStyles.right
+                    left: carStyles.left
                 }, dur_sc, easing_sc);
 
                 // p9c 애니메이션
@@ -356,9 +353,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: p9cStyles.width,
                     height: p9cStyles.height,
                     top: p9cStyles.top,
-                    bottom: p9cStyles.bottom,
-                    left: p9cStyles.left,
-                    right: p9cStyles.right
+                    left: p9cStyles.left
                 }, dur_sc, easing_sc);
 
                 //***************************
