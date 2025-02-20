@@ -97,9 +97,25 @@ window.addEventListener("DOMContentLoaded", () => {
                 p9c: {
                     width: 'fit-content',
                     height: 'fit-content',
-                    top: '40%',
+                    top: '36%',
                     left: '50%',
-                    transform: 'translateX(-50%)'
+                    transform: 'translateX(-50%)',
+                    
+                },
+                p9cShadow: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '100%',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    
+                },
+                text: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '100%',
+                    left: '50%'
+
                 },
 
                 ////////////////////////////////////////////////////////
@@ -109,52 +125,57 @@ window.addEventListener("DOMContentLoaded", () => {
             2: {
 
                 logo: {
-                    width: '158.75px',
-                    height: '175px',
+                    width: '79.375px',
+                    height: '87.5px',
                     top: '10%',
-                    left: '90%'
-
-
+                    left: '93%'
                 },
                 square: {
                     width: '100%',
                     height: '100%',
                     top: '0%',
-                    left: '-23%'
+                    left: '-15%'
                 },
                 car: {
                     width: '1000px',
                     height: '1000px',
-                    top: '0%',
+                    top: '15%',
                     left: '80%'
                 },
                 p9c: {
                     width: 'fit-content',
                     height: 'fit-content',
-                    top: '10%',
-                    left: '30%',
-                    color: 'white'
+                    top: '90px',
+                    left: '50%',
+                    transform: 'translateX(-50%)'
+
+                },
+                p9cShadow: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '120px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                },
+                text: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '275px',
+                    left: '50%'
 
                 },
 
-
-
             },
-
-
-
-
-
-
 
 
             3: {
 
                 logo: {
-                    width: '158.75px',
-                    height: '175px',
+                    width: '79.375px',
+                    height: '87.5px',
                     top: '30%',
-                    left: 'calc(50% - 79.375px / 2)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
 
                 },
                 square: {
@@ -167,7 +188,31 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '20%',
                     height: '60%',
                     bottom: '-20%',
-                    left: 'calc(50% - 267.43px / 2)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
+
+                },
+                p9c: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '-100%',
+                    left: '50%',
+                    transform: 'translateX(-50%)'
+
+                },
+                p9cShadow: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '-100%',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    
+                },
+                text: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '100%',
+                    left: '50%'
 
                 },
 
@@ -187,14 +232,16 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '158.75px',
                     height: '175px',
                     top: '30%',
-                    left: 'calc(50% - 79.375px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
 
                 },
                 car: {
                     width: '0',
                     height: '0',
                     top: '50%',
-                    left: 'calc(50% - 400px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 },
 
 
@@ -213,20 +260,23 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '158.75px',
                     height: '175px',
                     top: '30%',
-                    left: 'calc(50% - 79.375px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
 
                 },
                 square: {
                     width: '50%',
                     height: '50%',
                     top: '50%',
-                    left: '0'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 },
                 car: {
                     width: '50%',
                     height: '50%',
                     top: '50%',
-                    left: 'calc(50% - 400px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 },
 
 
@@ -245,7 +295,8 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '158.75px',
                     height: '175px',
                     top: '30%',
-                    left: 'calc(50% - 79.375px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
 
                 },
                 square: {
@@ -258,7 +309,9 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '0',
                     height: '0',
                     top: '0',
-                    left: 'calc(50% - 400px)'
+                    left: '50%',
+                    transform: 'translateX(-50%)'
+
                 }
 
 
@@ -321,15 +374,16 @@ window.addEventListener("DOMContentLoaded", () => {
                 let squareStyles = pageStyleConfig[pno].square;
                 let carStyles = pageStyleConfig[pno].car;
                 let p9cStyles = pageStyleConfig[pno].p9c;
-                let prsStyles = pageStyleConfig[pno].prs;
-
+                let p9cShadowStyles = pageStyleConfig[pno].p9cShadow;
+                let textStyles = pageStyleConfig[pno].text;
 
                 // logo 애니메이션
                 $(".logo").stop().animate({
                     width: logoStyles.width,
                     height: logoStyles.height,
                     top: logoStyles.top,
-                    left: logoStyles.left
+                    left: logoStyles.left,
+                    right: logoStyles.right
                 }, dur_sc, easing_sc);
 
                 // square 애니메이션
@@ -337,7 +391,8 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: squareStyles.width,
                     height: squareStyles.height,
                     top: squareStyles.top,
-                    left: squareStyles.left
+                    left: squareStyles.left,
+                    right: squareStyles.right
                 }, dur_sc, easing_sc);
 
                 // car 애니메이션
@@ -345,7 +400,8 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: carStyles.width,
                     height: carStyles.height,
                     top: carStyles.top,
-                    left: carStyles.left
+                    left: carStyles.left,
+                    right: carStyles.right
                 }, dur_sc, easing_sc);
 
                 // p9c 애니메이션
@@ -353,7 +409,26 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: p9cStyles.width,
                     height: p9cStyles.height,
                     top: p9cStyles.top,
-                    left: p9cStyles.left
+                    left: p9cStyles.left,
+                    right: p9cStyles.right
+                }, dur_sc, easing_sc);
+
+                // p9cShadow 애니메이션
+                $(".p9cShadow").stop().animate({
+                    width: p9cShadowStyles.width,
+                    height: p9cShadowStyles.height,
+                    top: p9cShadowStyles.top,
+                    left: p9cShadowStyles.left,
+                    right: p9cShadowStyles.right
+                }, dur_sc, easing_sc);
+
+                // text 애니메이션
+                $(".text").stop().animate({
+                    width: textStyles.width,
+                    height: textStyles.height,
+                    top: textStyles.top,
+                    left: textStyles.left,
+                    right: textStyles.right
                 }, dur_sc, easing_sc);
 
                 //***************************

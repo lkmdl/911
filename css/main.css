@@ -14,7 +14,7 @@
 
 } */
 
-#aSide model-viewer {
+model-viewer {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -22,7 +22,6 @@
     width: 1000px;
     height: 1000px;
     border: none;
-    /* outline: 1px dotted red; */
 
 }
 
@@ -60,10 +59,35 @@
     transform: translateX(-50%);
     width: fit-content;
     height: fit-content;
-    color: #f5deb340;
-    font-size: 100px;
+    color: #fff;
+    font-size: 8vw;
     font-family: cursive;
     z-index: -1;
+    
+}
+
+.p9cShadow {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+    color: #ffffff00;
+    font-size: 8vw;
+    text-decoration: 5px underline rgb(255,218,91);
+    font-family: cursive;
+    z-index: -1;
+    
+}
+
+.text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 2.25vw;
     
 }
 
