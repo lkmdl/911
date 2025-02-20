@@ -29,10 +29,10 @@ window.addEventListener("DOMContentLoaded", () => {
                 angle: 50
             }, // 세 번째 페이지 (회전각 90)
             3: {
-                angle: 135
+                angle: 180
             }, // 네 번째 페이지 (회전각 135)
             4: {
-                angle: 270
+                angle: 180
             }, // 다섯 번째 페이지 (회전각 180)
             5: {
                 angle: 252
@@ -100,7 +100,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '36%',
                     left: '50%',
                     transform: 'translateX(-50%)',
-                    
+
                 },
                 p9cShadow: {
                     width: 'fit-content',
@@ -108,7 +108,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '100%',
                     left: '50%',
                     transform: 'translateX(-50%)',
-                    
+
                 },
                 text: {
                     width: 'fit-content',
@@ -164,7 +164,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     left: '50%'
 
                 },
-
+                ////////////////////////////////////////////////////////
             },
 
 
@@ -179,15 +179,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
                 },
                 square: {
-                    width: '80%',
-                    height: '70%',
-                    top: '30%',
-                    left: '0'
+                    width: '100%',
+                    height: '100%',
+                    top: '0%',
+                    left: '-50%'
                 },
                 car: {
-                    width: '20%',
-                    height: '60%',
-                    bottom: '-20%',
+                    width: '1000px',
+                    height: '1000px',
+                    top: '20%',
                     left: '50%',
                     transform: 'translateX(-50%)'
 
@@ -205,8 +205,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: 'fit-content',
                     top: '-100%',
                     left: '50%',
-                    transform: 'translateX(-50%)',
-                    
+
                 },
                 text: {
                     width: 'fit-content',
@@ -219,32 +218,52 @@ window.addEventListener("DOMContentLoaded", () => {
 
             },
 
-
-
-
-
-
-
-
             4: {
 
                 logo: {
-                    width: '158.75px',
-                    height: '175px',
+                    width: '79.375px',
+                    height: '87.5px',
                     top: '30%',
                     left: '50%',
                     transform: 'translateX(-50%)'
 
                 },
+                square: {
+                    width: '100%',
+                    height: '100%',
+                    top: '0%',
+                    left: '50%'
+                },
                 car: {
-                    width: '0',
-                    height: '0',
-                    top: '50%',
+                    width: '20%',
+                    height: '60%',
+                    top: '-40%',
                     left: '50%',
                     transform: 'translateX(-50%)'
+
                 },
+                p9c: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '-100%',
+                    left: '50%',
+                    transform: 'translateX(-50%)'
 
+                },
+                p9cShadow: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '-100%',
+                    left: '50%',
 
+                },
+                text: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '100%',
+                    left: '50%'
+
+                },
             },
 
 
