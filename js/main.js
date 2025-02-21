@@ -142,9 +142,16 @@ window.addEventListener("DOMContentLoaded", () => {
                 text: {
                     width: 'fit-content',
                     height: 'fit-content',
-                    top: '275px',
+                    top: '27%',
                     left: '50%'
                 },
+
+
+
+
+
+
+                
                 ////////////////////////////////////////////////////////
             },
 
@@ -406,6 +413,14 @@ window.addEventListener("DOMContentLoaded", () => {
                     textDecorationThickness: p9cStyles.textDecorationThickness,
                     textUnderlineOffset: p9cStyles.textUnderlineOffset
                 });
+
+                // text 애니메이션
+                $(".text").stop().animate({
+                    width: textStyles.width,
+                    height: textStyles.height,
+                    top: textStyles.top,
+                    left: textStyles.left,
+                }, dur_sc, easing_sc);
 
                 // text 애니메이션
                 $(".text").stop().animate({
