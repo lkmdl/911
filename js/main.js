@@ -1,53 +1,48 @@
 window.addEventListener("DOMContentLoaded", () => {
     console.log("ready");
 
-    // 1. 현재 페이지번호
     let pno = 0;
-    // 2. 전체 페이지수
+    // 전체 페이지수
     const totnum = 7;
-    // 3. 광스크롤 상태변수
+    // 광스크롤 상태변수
     let prot_sc = 0; //0-허용, 1-불허용
-    // 4. 스크롤애니메이션 시간
+    // 스크롤애니메이션 시간
     const dur_sc = 700;
-    // 광스크롤 금지 시간, 스크롤애니시간
-    // 5. 스크롤이징
+    // 스크롤이징
     const easing_sc = "easeInOutQuint";
     ///////////////////////////////////////////////////
 
     $(function () { ////// jQB //////////////////////
-        // 3D 모델의 회전 상태를 다룰 변수
         let rotationAngle = 0; // 회전 각도를 저장하는 변수
-        // 페이지에 맞는 회전각도 및 속도 설정 (페이지 번호에 따른 회전값 설정)
-        const pageRotationConfig = { // 새로 추가된 객체: 각 페이지에 맞는 회전 각도와 속도 설정
+        const pageRotationConfig = { // 각 페이지회전 각도설정
             0: {
                 angle: 0
-            }, // 첫 페이지 (회전각 0도)
+            }, // 첫 페이지
             1: {
                 angle: 90
-            }, // 두 번째 페이지 (회전각 45)
+            }, // 두 번째 페이지
             2: {
                 angle: 50
-            }, // 세 번째 페이지 (회전각 90)
+            }, // 세 번째 페이지
             3: {
                 angle: 180
-            }, // 네 번째 페이지 (회전각 135)
+            }, // 네 번째 페이지
             4: {
-                angle: 180
-            }, // 다섯 번째 페이지 (회전각 180)
+                angle: 230
+            }, // 다섯 번째 페이지
             5: {
-                angle: 252
-            }, // 여섯 번째 페이지 (회전각 252)
+                angle: 180
+            }, // 여섯 번째 페이지
             6: {
-                angle: 270
-            } // 일곱 번째 페이지 (회전각 270)
+                angle: 180
+            } // 일곱 번째 페이지
         };
-
 
         let pageStyleConfig = {
             0: {
                 logo: {
-                    width: '158.75px',
-                    height: '175px',
+                    width: '317.5px',
+                    height: '350px',
                     top: '30%',
                     left: '50%',
                     transform: 'translateX(-50%)'
@@ -70,13 +65,12 @@ window.addEventListener("DOMContentLoaded", () => {
                     left: '50%',
                     transform: 'translateX(-50%)'
                 },
-
             },
             /////////////////////////////////////////////////////
             1: {
                 logo: {
-                    width: '158.75px',
-                    height: '175px',
+                    width: '79.375px',
+                    height: '87.5px',
                     top: '10%',
                     left: '50%',
                     transform: 'translateX(-50%)'
@@ -99,25 +93,15 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: 'fit-content',
                     top: '36%',
                     left: '50%',
-                    transform: 'translateX(-50%)',
-
-                },
-                p9cShadow: {
-                    width: 'fit-content',
-                    height: 'fit-content',
-                    top: '100%',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-
+                    transform: 'translateX(-50%)',                textDecorationLine: 'none',
+                    color: 'rgb(58, 55, 56)'
                 },
                 text: {
                     width: 'fit-content',
                     height: 'fit-content',
                     top: '100%',
                     left: '50%'
-
                 },
-
                 ////////////////////////////////////////////////////////
             },
 
@@ -147,35 +131,30 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: 'fit-content',
                     top: '90px',
                     left: '50%',
-                    transform: 'translateX(-50%)'
-
-                },
-                p9cShadow: {
-                    width: 'fit-content',
-                    height: 'fit-content',
-                    top: '120px',
-                    left: '50%',
                     transform: 'translateX(-50%)',
+                    color: '#fff',
+                    fontSize: '8vw',
+                    textDecorationLine: 'underline',
+                    textDecorationColor: 'rgb(255, 218, 91)',
+                    textDecorationThickness: '5px',
+                    textUnderlineOffset: '25px'
                 },
                 text: {
                     width: 'fit-content',
                     height: 'fit-content',
                     top: '275px',
                     left: '50%'
-
                 },
                 ////////////////////////////////////////////////////////
             },
 
 
             3: {
-
                 logo: {
                     width: '79.375px',
                     height: '87.5px',
-                    top: '30%',
-                    left: '50%',
-                    transform: 'translateX(-50%)'
+                    top: '10%',
+                    left: '93%'
 
                 },
                 square: {
@@ -190,23 +169,100 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '20%',
                     left: '50%',
                     transform: 'translateX(-50%)'
+                },
+                p9c: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '90px',
+                    left: '25%',
+                    transform: 'translateX(-50%)',
+                    fontSize: '5vw'
+                },
+                text: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '100%',
+                    left: '50%'
+                },
+
+            },
+
+            4: {
+
+                logo: {
+                    width: '79.375px',
+                    height: '87.5px',
+                    top: '10%',
+                    left: '93%'
+                },
+                square: {
+                    width: '100%',
+                    height: '100%',
+                    top: '0%',
+                    left: '15%'
+                },
+                car: {
+                    width: '1000px',
+                    height: '1000px',
+                    top: '15%',
+                    left: '20%'
+                },
+                p9c: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '90px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    color: '#fff',
+                    fontSize: '8vw',
+                    textDecorationLine: 'underline',
+                    textDecorationColor: 'rgb(255, 218, 91)',
+                    textDecorationThickness: '5px',
+                    textUnderlineOffset: '25px'
+
+                },
+                text: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '100%',
+                    left: '50%'
+
+                },
+            },
+
+            5: {
+
+                logo: {
+                    width: '79.375px',
+                    height: '87.5px',
+                    top: '10%',
+                    left: '93%'
+
+                },
+                square: {
+                    width: '100%',
+                    height: '100%',
+                    top: '-30%',
+                    left: '0%'
+                },
+                car: {
+                    width: '1000px',
+                    height: '1000px',
+                    top: '5%',
+                    left: '50%',
+                    transform: 'translateX(-50%)'
 
                 },
                 p9c: {
                     width: 'fit-content',
                     height: 'fit-content',
-                    top: '-100%',
-                    left: '50%',
-                    transform: 'translateX(-50%)'
+                    top: '90px',
+                    left: '25%',
+                    transform: 'translateX(-50%)',
+                    fontSize: '5vw'
 
                 },
-                p9cShadow: {
-                    width: 'fit-content',
-                    height: 'fit-content',
-                    top: '-100%',
-                    left: '50%',
 
-                },
                 text: {
                     width: 'fit-content',
                     height: 'fit-content',
@@ -218,21 +274,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
             },
 
-            4: {
+            6: {
 
                 logo: {
                     width: '79.375px',
                     height: '87.5px',
-                    top: '30%',
-                    left: '50%',
-                    transform: 'translateX(-50%)'
+                    top: '10%',
+                    left: '105%'
 
                 },
                 square: {
                     width: '100%',
                     height: '100%',
                     top: '0%',
-                    left: '50%'
+                    left: '0%'
                 },
                 car: {
                     width: '20%',
@@ -245,94 +300,11 @@ window.addEventListener("DOMContentLoaded", () => {
                 p9c: {
                     width: 'fit-content',
                     height: 'fit-content',
-                    top: '-100%',
-                    left: '50%',
+                    top: '-90px',
+                    left: '-25%',
                     transform: 'translateX(-50%)'
 
                 },
-                p9cShadow: {
-                    width: 'fit-content',
-                    height: 'fit-content',
-                    top: '-100%',
-                    left: '50%',
-
-                },
-                text: {
-                    width: 'fit-content',
-                    height: 'fit-content',
-                    top: '100%',
-                    left: '50%'
-
-                },
-            },
-
-
-
-
-
-
-
-
-            5: {
-
-                logo: {
-                    width: '158.75px',
-                    height: '175px',
-                    top: '30%',
-                    left: '50%',
-                    transform: 'translateX(-50%)'
-
-                },
-                square: {
-                    width: '50%',
-                    height: '50%',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translateX(-50%)'
-                },
-                car: {
-                    width: '50%',
-                    height: '50%',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translateX(-50%)'
-                },
-
-
-            },
-
-
-
-
-
-
-
-
-            6: {
-
-                logo: {
-                    width: '158.75px',
-                    height: '175px',
-                    top: '30%',
-                    left: '50%',
-                    transform: 'translateX(-50%)'
-
-                },
-                square: {
-                    width: '100%',
-                    height: '100%',
-                    top: '0',
-                    left: '0'
-                },
-                car: {
-                    width: '0',
-                    height: '0',
-                    top: '0',
-                    left: '50%',
-                    transform: 'translateX(-50%)'
-
-                }
-
 
             }
         };
@@ -341,9 +313,8 @@ window.addEventListener("DOMContentLoaded", () => {
         //////////////// 자동스크롤 구현 ////////////////////
         $(document).on("mousewheel DOMMouseScroll",
             function (e) { // e - 이벤트 전달값
-
                 // 광스크롤 금지 /////////
-                if (prot_sc) return; //돌아가
+                if (prot_sc) return;
                 prot_sc = 1; //잠금
                 setTimeout(() => prot_sc = 0, dur_sc);
                 //////////////////////////////
@@ -362,7 +333,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 // window.event 는 오리지널 이벤트임
 
                 //***************************
-                // 1. 마우스 휠 방향 알아내기!
+                // 마우스 휠 방향 알아내기!
                 // 휠델타값으로 방향을 알아낸다!
                 // e.wheelDelta는 일반 브라우저용 방향정보
                 // e.detail은 파이어폭스용 방향정보
@@ -370,7 +341,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 // console.log("휠델타값:" + delta);
 
                 //********************************/
-                // 2. 방향에 따른 페이지 번호증감하기 ////
+                // 방향에 따른 페이지 번호증감하기 ////
                 if (delta < 0) { // 음수면 스크롤 아랫방향(다음페이지)
                     pno++;
                     if (pno === totnum) pno = totnum - 1; //끝번호에 고정
@@ -387,13 +358,11 @@ window.addEventListener("DOMContentLoaded", () => {
                 // 각도 변경: model-viewer의 camera-orbit을 설정
                 $("model-viewer").attr("camera-orbit", `${rotationAngle}deg 75deg 100%`);
 
-
                 // 페이지 번호에 맞춰 애니메이션 변경
                 let logoStyles = pageStyleConfig[pno].logo;
                 let squareStyles = pageStyleConfig[pno].square;
                 let carStyles = pageStyleConfig[pno].car;
                 let p9cStyles = pageStyleConfig[pno].p9c;
-                let p9cShadowStyles = pageStyleConfig[pno].p9cShadow;
                 let textStyles = pageStyleConfig[pno].text;
 
                 // logo 애니메이션
@@ -402,7 +371,6 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: logoStyles.height,
                     top: logoStyles.top,
                     left: logoStyles.left,
-                    right: logoStyles.right
                 }, dur_sc, easing_sc);
 
                 // square 애니메이션
@@ -411,7 +379,6 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: squareStyles.height,
                     top: squareStyles.top,
                     left: squareStyles.left,
-                    right: squareStyles.right
                 }, dur_sc, easing_sc);
 
                 // car 애니메이션
@@ -420,7 +387,6 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: carStyles.height,
                     top: carStyles.top,
                     left: carStyles.left,
-                    right: carStyles.right
                 }, dur_sc, easing_sc);
 
                 // p9c 애니메이션
@@ -429,17 +395,17 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: p9cStyles.height,
                     top: p9cStyles.top,
                     left: p9cStyles.left,
-                    right: p9cStyles.right
+                    fontSize: p9cStyles.fontSize,
+                    color: p9cStyles.color
                 }, dur_sc, easing_sc);
 
-                // p9cShadow 애니메이션
-                $(".p9cShadow").stop().animate({
-                    width: p9cShadowStyles.width,
-                    height: p9cShadowStyles.height,
-                    top: p9cShadowStyles.top,
-                    left: p9cShadowStyles.left,
-                    right: p9cShadowStyles.right
-                }, dur_sc, easing_sc);
+                // jQuery에서는 text-decoration 지원x
+                $(".p9c").css({
+                    textDecorationLine: p9cStyles.textDecorationLine,
+                    textDecorationColor: p9cStyles.textDecorationColor,
+                    textDecorationThickness: p9cStyles.textDecorationThickness,
+                    textUnderlineOffset: p9cStyles.textUnderlineOffset
+                });
 
                 // text 애니메이션
                 $(".text").stop().animate({
@@ -447,11 +413,10 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: textStyles.height,
                     top: textStyles.top,
                     left: textStyles.left,
-                    right: textStyles.right
                 }, dur_sc, easing_sc);
 
                 //***************************
-                // 3. 페이지번호를 높이값에 곱하여 스크롤 이동하기
+                // 페이지번호를 높이값에 곱하여 스크롤 이동하기
                 // 이동높이값
                 let pos = $(window).height() * pno;
                 // console.log("이동값:", pos);
