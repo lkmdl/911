@@ -108,6 +108,18 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '55%',
                     left: '-55%'
                 },
+                d1: {
+                    top: '55px',
+                    left: '0%'
+                },
+                d2: {
+                    top: '55px',
+                    left: '150%'
+                },
+                d3: {
+                    top: '55px',
+                    left: '255%'
+                },
                 ////////////////////////////////////////////////////////
             },
 
@@ -155,13 +167,30 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '55%',
                     left: '18.8%'
                 },
-
-
-
-
-
-
-
+                pg3_1text: {
+                    top: '30%',
+                    left: '-50%'
+                },
+                pg3_2text: {
+                    top: '25%',
+                    right: '-50%'
+                },
+                pg3_3text: {
+                    top: '46%',
+                    right: '-50%'
+                },
+                d1: {
+                    top: '55px',
+                    left: '0%'
+                },
+                d2: {
+                    top: '55px',
+                    left: '150px'
+                },
+                d3: {
+                    top: '55px',
+                    left: '255px'
+                },
                 ////////////////////////////////////////////////////////
             },
 
@@ -205,9 +234,37 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '45%',
                     left: '5%'
                 },
+                pg3_1text: {
+                    top: '30%',
+                    left: '7%'
+                },
+                pg3_2text: {
+                    top: '25%',
+                    right: '5%'
+                },
+                pg3_3text: {
+                    top: '46%',
+                    right: '5%'
+                },
+                d1: {
+                    top: '65px',
+                    left: '5%'
+                },
+                d2: {
+                    top: '135px',
+                    left: '5%'
+                },
+                d3: {
+                    top: '205px',
+                    left: '5%'
+                },
+                pg4text: {
+                    top: '25%',
+                    right: '-50%'
+                },
 
             },
-
+            ///////////////////////////////////////////////d///////////////////
             4: {
 
                 logo: {
@@ -220,28 +277,63 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '100%',
                     height: '100%',
                     top: '0%',
-                    left: '15%'
+                    left: '-85%'
                 },
                 car: {
                     width: '1000px',
                     height: '1000px',
-                    top: '15%',
-                    left: '20%'
+                    top: '0%',
+                    left: '20%',
+                    transform: 'translateX(-50%)'
                 },
                 p9c: {
                     width: 'fit-content',
                     height: 'fit-content',
                     top: '90px',
-                    left: '50%',
+                    left: '-50%',
                     transform: 'translateX(-50%)',
-                    color: '#fff',
-                    fontSize: '8vw',
-                    textDecorationThickness: '5px',
-                    textDecorationLine: 'underline',
-                    textDecorationColor: 'rgb(255, 218, 91)',
-                    textUnderlineOffset: '25px'
-
+                    fontSize: '5vw'
                 },
+                pg2text: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '-50%',
+                    left: '-50%'
+                },
+                dtiBox: {
+                    top: '45%',
+                    left: '-50%'
+                },
+                pg3_1text: {
+                    top: '30%',
+                    left: '-50%'
+                },
+                pg3_2text: {
+                    top: '25%',
+                    right: '-50%'
+                },
+                pg3_3text: {
+                    top: '46%',
+                    right: '-50%'
+                },
+                d1: {
+                    top: '65px',
+                    left: '-50%'
+                },
+                d2: {
+                    top: '135px',
+                    left: '-50%'
+                },
+                d3: {
+                    top: '205px',
+                    left: '-50%'
+                },
+                pg4text: {
+                    top: '25%',
+                    right: '15%'
+                },
+                
+
 
             },
 
@@ -252,7 +344,6 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: '87.5px',
                     top: '10%',
                     left: '93%'
-
                 },
                 square: {
                     width: '100%',
@@ -263,32 +354,55 @@ window.addEventListener("DOMContentLoaded", () => {
                 car: {
                     width: '1000px',
                     height: '1000px',
-                    top: '5%',
+                    top: '0%',
                     left: '50%',
                     transform: 'translateX(-50%)'
-
                 },
                 p9c: {
                     width: 'fit-content',
                     height: 'fit-content',
                     top: '90px',
-                    left: '25%',
+                    left: '-50%',
                     transform: 'translateX(-50%)',
                     fontSize: '5vw'
-
                 },
-
-                dtiBox: {
-                    top: '55%',
-                    left: '-55%'
-                },
-
                 pg2text: {
                     width: 'fit-content',
                     height: 'fit-content',
-                    top: '100%',
-                    left: '50%'
-
+                    top: '-50%',
+                    left: '-50%'
+                },
+                dtiBox: {
+                    top: '45%',
+                    left: '-50%'
+                },
+                pg3_1text: {
+                    top: '30%',
+                    left: '-50%'
+                },
+                pg3_2text: {
+                    top: '25%',
+                    right: '-50%'
+                },
+                pg3_3text: {
+                    top: '46%',
+                    right: '-50%'
+                },
+                d1: {
+                    top: '65px',
+                    left: '-50%'
+                },
+                d2: {
+                    top: '135px',
+                    left: '-50%'
+                },
+                d3: {
+                    top: '205px',
+                    left: '-50%'
+                },
+                pg4text: {
+                    top: '25%',
+                    right: '-50%'
                 },
 
 
@@ -300,8 +414,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '79.375px',
                     height: '87.5px',
                     top: '10%',
-                    left: '105%'
-
+                    left: '150%'
                 },
                 square: {
                     width: '100%',
@@ -317,18 +430,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     transform: 'translateX(-50%)'
 
                 },
-                p9c: {
-                    width: 'fit-content',
-                    height: 'fit-content',
-                    top: '90px',
-                    left: '-25%',
-                    transform: 'translateX(-50%)'
 
-                },
-                dtiBox: {
-                    top: '55%',
-                    left: '-55%'
-                },
 
             }
         };
@@ -389,6 +491,13 @@ window.addEventListener("DOMContentLoaded", () => {
                 let p9cStyles = pageStyleConfig[pno].p9c;
                 let pg2textStyles = pageStyleConfig[pno].pg2text;
                 let dtiBoxStyles = pageStyleConfig[pno].dtiBox;
+                let pg3_1textStyles = pageStyleConfig[pno].pg3_1text;
+                let pg3_2textStyles = pageStyleConfig[pno].pg3_2text;
+                let pg3_3textStyles = pageStyleConfig[pno].pg3_3text;
+                let d1Styles = pageStyleConfig[pno].d1;
+                let d2Styles = pageStyleConfig[pno].d2;
+                let d3Styles = pageStyleConfig[pno].d3;
+                let pg4textStyles = pageStyleConfig[pno].pg4text;
 
                 // logo 애니메이션
                 $(".logo").stop().animate({
@@ -446,6 +555,62 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: dtiBoxStyles.height,
                     top: dtiBoxStyles.top,
                     left: dtiBoxStyles.left,
+                }, dur_sc, easing_sc);
+
+                // pg3_1text 애니메이션
+                $(".pg3_1text").stop().animate({
+                    width: pg3_1textStyles.width,
+                    height: pg3_1textStyles.height,
+                    top: pg3_1textStyles.top,
+                    left: pg3_1textStyles.left,
+                }, dur_sc, easing_sc);
+
+                // pg3_2text 애니메이션
+                $(".pg3_2text").stop().animate({
+                    width: pg3_2textStyles.width,
+                    height: pg3_2textStyles.height,
+                    top: pg3_2textStyles.top,
+                    right: pg3_2textStyles.right,
+                }, dur_sc, easing_sc);
+                // pg3_1text 애니메이션
+
+                $(".pg3_3text").stop().animate({
+                    width: pg3_3textStyles.width,
+                    height: pg3_3textStyles.height,
+                    top: pg3_3textStyles.top,
+                    right: pg3_3textStyles.right,
+                }, dur_sc, easing_sc);
+
+                // d1 애니메이션
+                $(".d1").stop().animate({
+                    width: d1Styles.width,
+                    height: d1Styles.height,
+                    top: d1Styles.top,
+                    left: d1Styles.left,
+                }, dur_sc, easing_sc);
+
+                // d2 애니메이션
+                $(".d2").stop().animate({
+                    width: d2Styles.width,
+                    height: d2Styles.height,
+                    top: d2Styles.top,
+                    left: d2Styles.left,
+                }, dur_sc, easing_sc);
+
+                // d3 애니메이션
+                $(".d3").stop().animate({
+                    width: d3Styles.width,
+                    height: d3Styles.height,
+                    top: d3Styles.top,
+                    left: d3Styles.left,
+                }, dur_sc, easing_sc);
+
+                // pg4text 애니메이션
+                $(".pg4text").stop().animate({
+                    width: pg4textStyles.width,
+                    height: pg4textStyles.height,
+                    top: pg4textStyles.top,
+                    right: pg4textStyles.right,
                 }, dur_sc, easing_sc);
 
                 //***************************

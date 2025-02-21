@@ -8,12 +8,12 @@
 }
 
 model-viewer {
+    width: 1000px;
+    height: 1000px;
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    width: 1000px;
-    height: 1000px;
     border: none;
 }
 
@@ -23,34 +23,34 @@ model-viewer {
 }
 
 .square {
-    position: absolute;
-    top: 0%;
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0%;
     background: black;
     z-index: -3;
 }
 
 .logo {
-    position: absolute;
-    top: 30%;
-    left: 50%;
     width: 317.5px;
     /*1250 625 317.5 158.75 */
     height: 350px;
     /*1400 700 350 175 */
+    position: absolute;
+    top: 30%;
+    left: 50%;
     background: url(../img/carLogo.png) no-repeat center / 100% 100%;
     transform: translateX(-50%);
 
 }
 
 .p9c {
+    width: fit-content;
+    height: fit-content;
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    width: fit-content;
-    height: fit-content;
     color: rgb(58, 55, 56);
     font-size: 8vw;
     font-family: cursive;
@@ -79,10 +79,10 @@ model-viewer {
 }
 
 .dtiBox {
-    top: -60%;
-    left: 18.8%;
     width: fit-content;
     height: fit-content;
+    top: -60%;
+    left: -50%;
     
 }
 
@@ -96,7 +96,6 @@ model-viewer {
 .d1,
 .d2,
 .d3 {
-    top: 55px;
     font-family: auto;
     font-size: 2.4vw;
     color: rgb(255, 218, 91);
@@ -128,35 +127,40 @@ model-viewer {
 
 }
 
-.pg3-1text,
-.pg3-2text,
-.pg3-3text {
+.pg3_1text,
+.pg3_2text,
+.pg3_3text {
     position: absolute;
 
 }
 
-.pg3-1text {
+.pg3_1text {
     top: 30%;
-    left: 7%;
+    left: -55%;
     font-family: math;
     font-size: 1.5vw;
     color: rgb(255, 255, 255);
     
 }
-.pg3-2text {
+.pg3_2text {
     top: 25%;
-    right: 3%;
+    right: -50%;
     font-size: 1.5vw;
     color: rgb(58, 55, 56);
     
 }
-.pg3-3text {
+.pg3_3text {
     top: 46%;
-    right: 3%;
+    right: -50%;
     color: rgb(58, 55, 56);
 
 }
 
-.d {
-    outline: #fff;
+.pg4text {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 25%;
+    right: -50%;
+    font-size: 2.5vw;
 }
