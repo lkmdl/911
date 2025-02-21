@@ -300,7 +300,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 p9c: {
                     width: 'fit-content',
                     height: 'fit-content',
-                    top: '-90px',
+                    top: '90px',
                     left: '-25%',
                     transform: 'translateX(-50%)'
 
