@@ -65,6 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     left: '50%',
                     transform: 'translateX(-50%)'
                 },
+
             },
             /////////////////////////////////////////////////////
             1: {
@@ -93,14 +94,19 @@ window.addEventListener("DOMContentLoaded", () => {
                     height: 'fit-content',
                     top: '36%',
                     left: '50%',
-                    transform: 'translateX(-50%)',                textDecorationLine: 'none',
+                    transform: 'translateX(-50%)',
+                    textDecorationLine: 'none',
                     color: 'rgb(58, 55, 56)'
                 },
-                text: {
+                pg2text: {
                     width: 'fit-content',
                     height: 'fit-content',
                     top: '100%',
                     left: '50%'
+                },
+                dtiBox: {
+                    top: '55%',
+                    left: '-55%'
                 },
                 ////////////////////////////////////////////////////////
             },
@@ -134,24 +140,28 @@ window.addEventListener("DOMContentLoaded", () => {
                     transform: 'translateX(-50%)',
                     color: '#fff',
                     fontSize: '8vw',
+                    textDecorationThickness: '5px',
                     textDecorationLine: 'underline',
                     textDecorationColor: 'rgb(255, 218, 91)',
-                    textDecorationThickness: '5px',
                     textUnderlineOffset: '25px'
                 },
-                text: {
+                pg2text: {
                     width: 'fit-content',
                     height: 'fit-content',
                     top: '27%',
                     left: '50%'
                 },
+                dtiBox: {
+                    top: '55%',
+                    left: '18.8%'
+                },
 
 
 
 
 
 
-                
+
                 ////////////////////////////////////////////////////////
             },
 
@@ -173,7 +183,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 car: {
                     width: '1000px',
                     height: '1000px',
-                    top: '20%',
+                    top: '0%',
                     left: '50%',
                     transform: 'translateX(-50%)'
                 },
@@ -185,11 +195,15 @@ window.addEventListener("DOMContentLoaded", () => {
                     transform: 'translateX(-50%)',
                     fontSize: '5vw'
                 },
-                text: {
+                pg2text: {
                     width: 'fit-content',
                     height: 'fit-content',
-                    top: '100%',
-                    left: '50%'
+                    top: '27%',
+                    left: '-50%'
+                },
+                dtiBox: {
+                    top: '45%',
+                    left: '5%'
                 },
 
             },
@@ -222,19 +236,13 @@ window.addEventListener("DOMContentLoaded", () => {
                     transform: 'translateX(-50%)',
                     color: '#fff',
                     fontSize: '8vw',
+                    textDecorationThickness: '5px',
                     textDecorationLine: 'underline',
                     textDecorationColor: 'rgb(255, 218, 91)',
-                    textDecorationThickness: '5px',
                     textUnderlineOffset: '25px'
 
                 },
-                text: {
-                    width: 'fit-content',
-                    height: 'fit-content',
-                    top: '100%',
-                    left: '50%'
 
-                },
             },
 
             5: {
@@ -270,7 +278,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
                 },
 
-                text: {
+                dtiBox: {
+                    top: '55%',
+                    left: '-55%'
+                },
+
+                pg2text: {
                     width: 'fit-content',
                     height: 'fit-content',
                     top: '100%',
@@ -311,6 +324,10 @@ window.addEventListener("DOMContentLoaded", () => {
                     left: '-25%',
                     transform: 'translateX(-50%)'
 
+                },
+                dtiBox: {
+                    top: '55%',
+                    left: '-55%'
                 },
 
             }
@@ -370,7 +387,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 let squareStyles = pageStyleConfig[pno].square;
                 let carStyles = pageStyleConfig[pno].car;
                 let p9cStyles = pageStyleConfig[pno].p9c;
-                let textStyles = pageStyleConfig[pno].text;
+                let pg2textStyles = pageStyleConfig[pno].pg2text;
+                let dtiBoxStyles = pageStyleConfig[pno].dtiBox;
 
                 // logo 애니메이션
                 $(".logo").stop().animate({
@@ -414,20 +432,20 @@ window.addEventListener("DOMContentLoaded", () => {
                     textUnderlineOffset: p9cStyles.textUnderlineOffset
                 });
 
-                // text 애니메이션
-                $(".text").stop().animate({
-                    width: textStyles.width,
-                    height: textStyles.height,
-                    top: textStyles.top,
-                    left: textStyles.left,
+                // pg2text 애니메이션
+                $(".pg2text").stop().animate({
+                    width: pg2textStyles.width,
+                    height: pg2textStyles.height,
+                    top: pg2textStyles.top,
+                    left: pg2textStyles.left,
                 }, dur_sc, easing_sc);
 
-                // text 애니메이션
-                $(".text").stop().animate({
-                    width: textStyles.width,
-                    height: textStyles.height,
-                    top: textStyles.top,
-                    left: textStyles.left,
+                // dtiBox 애니메이션
+                $(".dtibox").stop().animate({
+                    width: dtiBoxStyles.width,
+                    height: dtiBoxStyles.height,
+                    top: dtiBoxStyles.top,
+                    left: dtiBoxStyles.left,
                 }, dur_sc, easing_sc);
 
                 //***************************
