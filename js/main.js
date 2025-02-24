@@ -10,32 +10,17 @@ window.addEventListener("DOMContentLoaded", () => {
     const dur_sc = 700;
     // 스크롤이징
     const easing_sc = "easeInOutQuint";
-    ///////////////////////////////////////////////////
 
-    $(function () { ////// jQB //////////////////////
+    $(function () { ////// jQB 
         let rotationAngle = 0; // 회전 각도를 저장하는 변수
         const pageRotationConfig = { // 각 페이지회전 각도설정
-            0: {
-                angle: 0
-            }, // 첫 페이지
-            1: {
-                angle: 90
-            }, // 두 번째 페이지
-            2: {
-                angle: 50
-            }, // 세 번째 페이지
-            3: {
-                angle: 180
-            }, // 네 번째 페이지
-            4: {
-                angle: 230
-            }, // 다섯 번째 페이지
-            5: {
-                angle: 180
-            }, // 여섯 번째 페이지
-            6: {
-                angle: 180
-            } // 일곱 번째 페이지
+            0: { angle: 0 }, // 첫 페이지
+            1: { angle: 90 }, // 두 번째 페이지
+            2: { angle: 50}, // 세 번째 페이지
+            3: { angle: 180 }, // 네 번째 페이지
+            4: { angle: 230 }, // 다섯 번째 페이지
+            5: { angle: 180 }, // 여섯 번째 페이지
+            6: { angle: 180 } // 일곱 번째 페이지
         };
 
         let pageStyleConfig = {
@@ -67,7 +52,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 },
 
             },
-            /////////////////////////////////////////////////////
             1: {
                 logo: {
                     width: '79.375px',
@@ -120,8 +104,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '55px',
                     left: '255%'
                 },
-                ////////////////////////////////////////////////////////
-            },
+             },
 
 
             2: {
@@ -191,8 +174,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '55px',
                     left: '255px'
                 },
-                ////////////////////////////////////////////////////////
-            },
+             },
 
 
             3: {
@@ -264,8 +246,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 },
 
             },
-            ///////////////////////////////////////////////d///////////////////
-            4: {
+             4: {
 
                 logo: {
                     width: '79.375px',
@@ -331,9 +312,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 pg4text: {
                     top: '25%',
                     right: '15%'
-                },
-                
-
+                },              
 
             },
 
@@ -625,10 +604,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 // dur_sc 상수에 공통시간설정
 
 
-            }); //////////// mousewheel //////////////////////
-        ///////////////////////////////////////////////////
-
-    }); ////////////// jQB /////////////////////////
-    ////////////////////////////////////////////////
-
+            }); //////////// mousewheel
+    }); ////////////// jQB
 });
