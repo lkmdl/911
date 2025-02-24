@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-    console.log("ready");
-
+    console.log("window, ready");
     let pno = 0;
     // 전체 페이지수
     const totnum = 7;

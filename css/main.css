@@ -17,6 +17,13 @@ model-viewer {
     border: none;
 }
 
+#car_load model-viewer {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+
+}
+
 .fixed {
     position: fixed;
     height: 100%;
