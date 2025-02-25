@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const dur_sc = 700;
     // 스크롤이징
     const easing_sc = "easeInOutQuint";
+    let modelLoading = true; //!!!!!!!!!
 
     $(function () { ////// jQB 
         let rotationAngle = 0; // 회전 각도를 저장하는 변수
@@ -499,12 +500,19 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         };
 
+        const modelViewer = document.querySelector("model-viewer");
+        modelViewer.addEventListener("load", () => {
+            modelLoading = false;
+        // 모델 로딩이 끝났음을 표시  !!!!!!!!!!!!!!!!
+        });
+
 
         //////////////// 자동스크롤 구현 ////////////////////
         $(document).on("mousewheel DOMMouseScroll",
             function (e) { // e - 이벤트 전달값
                 // 광스크롤 금지 /////////
-                if (prot_sc) return;
+                // if (prot_sc) return;
+                if (prot_sc || modelLoading) return;
                 prot_sc = 1; //잠금
                 setTimeout(() => prot_sc = 0, dur_sc);
                 //////////////////////////////
