@@ -167,12 +167,19 @@ window.addEventListener("DOMContentLoaded", () => {
                 },
                 d2: {
                     top: '55px',
-                    left: '150px'
+                    left: '155px'
                 },
                 d3: {
                     top: '55px',
-                    left: '255px'
+                    left: '265px'
                 },
+                
+                shadow_prs: {
+                    bottom: '-50%',
+                    right: '10px'
+                },
+
+                
              },
 
 
@@ -232,13 +239,17 @@ window.addEventListener("DOMContentLoaded", () => {
                     left: '5%'
                 },
                 d2: {
-                    top: '135px',
+                    top: '151px',
                     left: '5%'
                 },
                 d3: {
-                    top: '205px',
+                    top: '237px',
                     left: '5%'
-                },
+                },                
+                shadow_prs: {
+                    bottom: '-50%',
+                    left: '75%'
+                },                
                 pg4text: {
                     top: '25%',
                     right: '-50%'
@@ -257,13 +268,13 @@ window.addEventListener("DOMContentLoaded", () => {
                     width: '100%',
                     height: '100%',
                     top: '0%',
-                    left: '-85%'
+                    left: '-70%'
                 },
                 car: {
                     width: '1000px',
                     height: '1000px',
                     top: '0%',
-                    left: '20%',
+                    left: '30%',
                     transform: 'translateX(-50%)'
                 },
                 p9c: {
@@ -308,6 +319,13 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '205px',
                     left: '-50%'
                 },
+
+                shadow_prs: {
+                    bottom: '10%',
+                    left: '65%',
+                    
+                },
+
                 pg4text: {
                     top: '25%',
                     right: '15%'
@@ -339,8 +357,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 p9c: {
                     width: 'fit-content',
                     height: 'fit-content',
-                    top: '90px',
-                    left: '-50%',
+                    top: '150px',
+                    left: '25%',
                     transform: 'translateX(-50%)',
                     fontSize: '5vw'
                 },
@@ -351,8 +369,8 @@ window.addEventListener("DOMContentLoaded", () => {
                     left: '-50%'
                 },
                 dtiBox: {
-                    top: '45%',
-                    left: '-50%'
+                    top: '25%',
+                    left: '75%'
                 },
                 pg3_1text: {
                     top: '30%',
@@ -378,9 +396,19 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '205px',
                     left: '-50%'
                 },
+                shadow_prs: {
+                    bottom: '5%',
+                    left: '50%',      
+                    transform: 'translateX(-50%)',              
+                },
                 pg4text: {
                     top: '25%',
                     right: '-50%'
+                },
+
+                pg5text: {
+                    top: '275px',
+                    left: '4.7%'
                 },
 
 
@@ -406,9 +434,63 @@ window.addEventListener("DOMContentLoaded", () => {
                     top: '-40%',
                     left: '50%',
                     transform: 'translateX(-50%)'
-
+                },
+                p9c: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '150px',
+                    left: '-50%',
+                    transform: 'translateX(-50%)',
+                    fontSize: '5vw'
+                },
+                pg2text: {
+                    width: 'fit-content',
+                    height: 'fit-content',
+                    top: '-50%',
+                    left: '-50%'
+                },
+                dtiBox: {
+                    top: '25%',
+                    left: '100%'
+                },
+                pg3_1text: {
+                    top: '30%',
+                    left: '-50%'
+                },
+                pg3_2text: {
+                    top: '25%',
+                    right: '-50%'
+                },
+                pg3_3text: {
+                    top: '46%',
+                    right: '-50%'
+                },
+                d1: {
+                    top: '65px',
+                    left: '-50%'
+                },
+                d2: {
+                    top: '135px',
+                    left: '-50%'
+                },
+                d3: {
+                    top: '205px',
+                    left: '-50%'
+                },
+                shadow_prs: {
+                    bottom: '-50%',
+                    left: '50%',      
+                    transform: 'translateX(-50%)',              
+                },
+                pg4text: {
+                    top: '25%',
+                    right: '-50%'
                 },
 
+                pg5text: {
+                    top: '275px',
+                    left: '-50%'
+                },
 
             }
         };
@@ -475,8 +557,10 @@ window.addEventListener("DOMContentLoaded", () => {
                 let d1Styles = pageStyleConfig[pno].d1;
                 let d2Styles = pageStyleConfig[pno].d2;
                 let d3Styles = pageStyleConfig[pno].d3;
+                let shadow_prsStyles = pageStyleConfig[pno].shadow_prs;
                 let pg4textStyles = pageStyleConfig[pno].pg4text;
-
+                let pg5textStyles = pageStyleConfig[pno].pg5text;
+                
                 // logo 애니메이션
                 $(".logo").stop().animate({
                     width: logoStyles.width,
@@ -583,12 +667,30 @@ window.addEventListener("DOMContentLoaded", () => {
                     left: d3Styles.left,
                 }, dur_sc, easing_sc);
 
+                
+                // shadow_prs 애니메이션
+                $(".shadow_prs").stop().animate({
+                    width: shadow_prsStyles.width,
+                    height: shadow_prsStyles.height,
+                    bottom: shadow_prsStyles.bottom,
+                    left: shadow_prsStyles.left,
+                }, dur_sc, easing_sc);
+
+
                 // pg4text 애니메이션
                 $(".pg4text").stop().animate({
                     width: pg4textStyles.width,
                     height: pg4textStyles.height,
                     top: pg4textStyles.top,
                     right: pg4textStyles.right,
+                }, dur_sc, easing_sc);
+
+                // pg5text 애니메이션
+                $(".pg5text").stop().animate({
+                    width: pg5textStyles.width,
+                    height: pg5textStyles.height,
+                    top: pg5textStyles.top,
+                    left: pg5textStyles.left,
                 }, dur_sc, easing_sc);
 
                 //***************************

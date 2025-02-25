@@ -34,7 +34,7 @@ model-viewer {
     height: 100%;
     position: absolute;
     top: 0%;
-    background: black;
+    background: rgb(0, 0, 0);
     z-index: -3;
 }
 
@@ -58,7 +58,7 @@ model-viewer {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    color: rgb(58, 55, 56);
+    color: rgb(58, 55, 56, 1);
     font-size: 8vw;
     font-family: cursive;
     z-index: -2;
@@ -72,7 +72,7 @@ model-viewer {
     transform: translateX(-50%);
     font-family: math;
     font-size: 2.4vw;
-    color: #fff;
+    color: rgb(255, 255, 255);
     
 }
 
@@ -96,7 +96,7 @@ model-viewer {
 .dti {
     font-family: cursive;
     font-size: 2.4vw;
-    color: white;
+    color: rgb(255, 255, 255);
     
 }
 
@@ -105,7 +105,7 @@ model-viewer {
 .d3 {
     font-family: auto;
     font-size: 2.4vw;
-    color: rgb(255, 218, 91);
+    color: rgb(253 213 101);
 
 }
 
@@ -130,7 +130,7 @@ model-viewer {
 .d3 .body {
     font-family: auto;
     font-size: 1vw;
-    color: #fff;
+    color: rgb(58, 55, 56, 1);
 
 }
 
@@ -153,13 +153,13 @@ model-viewer {
     top: 25%;
     right: -50%;
     font-size: 1.5vw;
-    color: rgb(58, 55, 56);
+    color: rgb(58, 55, 56, 1);
     
 }
 .pg3_3text {
     top: 46%;
     right: -50%;
-    color: rgb(58, 55, 56);
+    color: rgb(58, 55, 56, 1);
 
 }
 
@@ -170,4 +170,26 @@ model-viewer {
     top: 25%;
     right: -50%;
     font-size: 2.5vw;
+}
+
+.shadow_prs {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: -50%;
+    left: 65%;
+    transform: translateX(-50%);
+    font-size: 13vw;
+    font-family: cursive;
+    color: rgba(227, 227, 227, 1);
+}
+
+.pg5text {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 275px;
+    left: -50%;
+    font-size: 1.4vw;
+    color: rgb(255, 255, 255);
 }
