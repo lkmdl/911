@@ -321,7 +321,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 },
 
                 shadow_prs: {
-                    bottom: '10%',
+                    bottom: '0',
                     left: '65%',
                     
                 },
@@ -329,7 +329,11 @@ window.addEventListener("DOMContentLoaded", () => {
                 pg4text: {
                     top: '25%',
                     right: '15%'
-                },              
+                },            
+                pg5text: {
+                    top: '275px',
+                    left: '-50%'
+                },  
 
             },
 
@@ -397,7 +401,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     left: '-50%'
                 },
                 shadow_prs: {
-                    bottom: '5%',
+                    bottom: '0',
                     left: '50%',      
                     transform: 'translateX(-50%)',              
                 },
